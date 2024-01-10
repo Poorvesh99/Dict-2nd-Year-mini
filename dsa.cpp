@@ -39,7 +39,7 @@ void check(string key)
 
     while(getline(wordfile, word))
     {
-        word = word.substr(0, word.length() - 1);
+        word = word.substr(0, word.length() - 2);
         if (word.compare(key)== 0)
         {
             while(word.compare(key) == 0)
@@ -48,7 +48,7 @@ void check(string key)
                 cout<<"\n"<<meaning<<"\n";
                 getline(meaningfile, meaning);
                 getline(wordfile, word);
-                word = word.substr(0, word.length() - 1);   
+                word = word.substr(0, word.length() - 2);   
             }
             wordfile.close();
             meaningfile.close();
